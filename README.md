@@ -79,11 +79,13 @@ $$\bar{\Delta} = \sum_i \Delta_i\, P(\Delta_i), \qquad \sigma_\Delta = \sqrt{\su
 
 Next-delay rule used in the notebook (clipped to a range):
 
-$$\tau_{\text{next}} = \mathrm{clip}\!\left(\frac{1}{\sigma_\Delta},\; 5\ \text{ns},\; 200\ \text{ns}\right)$$
+$$\tau_{\text{next}} = \mathrm{}\left(\frac{1}{\sigma_\Delta},\; 5\ \text{ns},\; 200\ \text{ns}\right)$$
 
 Notebook Ramsey pulses are two Gaussian $\pi/2$ pulses of 20 ns each:
 
 $$A_{\pi/2} = \frac{\pi/2}{\sigma_r \sqrt{2\pi}}, \qquad \sigma_r = \frac{20}{4}\ \text{ns}$$
+
+Ramsey prob is the model of experiment. Give it a trial detuning and a delay, and it simulates the full Ramsey sequence on the three-level transmon with the two Gaussian π/2 pulses. It returns the probability of finding the qubit in |1⟩ at the end. We need this because Bayesian inference needs the likelihood, meaning how probable the observed data would be if the detuning were a given value.
 
 
 ## 5. Measurement Model
