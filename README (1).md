@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <img src="results/original_notebook/fig1_static_pi_pulse.png" width="520" alt="Gaussian pi-pulse populations">
+  <img src="Results/fig1_static_pi_pulse.png" width="520" alt="Gaussian pi-pulse populations">
 </p>
 
 ---
@@ -39,7 +39,7 @@ A transmon qubit is never perfectly a two-level system: the third level $|2\rang
 | 3 | Adaptive Bayesian Ramsey | Can a hidden detuning be estimated with a grid posterior and adaptive delays? |
 | 4 | 24-hour drift | When should the qubit be recalibrated: never, on a schedule, or on a health check? |
 
-Everything is in one notebook, `notebooks/3_level_transmon_original.ipynb`.
+Everything is in one notebook, `3_level_transmon.ipynb`.
 
 ## Getting Started
 
@@ -195,7 +195,7 @@ Setup: true detuning 0.025, 301-point grid on [−0.08, 0.08], uniform prior, 15
 | Shot saving printed by the notebook | −900 % |
 
 <p align="center">
-  <img src="results/original_notebook/fig2_bayesian_ramsey_original.png" width="800" alt="Adaptive Bayesian Ramsey results"><br>
+  <img src="Results/fig2_bayesian_ramsey_original.png" width="800" alt="Adaptive Bayesian Ramsey results"><br>
   <em>(a) posterior narrowing, (b) adaptive delay sequence, (c) estimation precision vs total shots, (d) shot-efficiency comparison.</em>
 </p>
 
@@ -215,7 +215,7 @@ Setup: random-walk drift from Δ(0) = 0.02 with 0.0002 steps per minute over 1,4
 | P2 | Health check every 5 min, threshold 0.004 | 2 |
 
 <p align="center">
-  <img src="results/original_notebook/fig3_drift_policies_original.png" width="800" alt="Drift policies over 24 hours"><br>
+  <img src="Results/fig3_drift_policies_original.png" width="800" alt="Drift policies over 24 hours"><br>
   <em>Full-day oracle gate error for P0 (grey), P1 (red) and P2 (blue).</em>
 </p>
 
